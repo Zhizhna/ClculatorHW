@@ -22,7 +22,7 @@ public class CalculatorController {
         int result = calculator.add(num1, num2);
         return num1 + " + " + num2 + " = " + result;
     }
-
+//
     @GetMapping("/calculator/minus")
     public String subtraction(@RequestParam int num1, @RequestParam int num2) {
         int result = calculator.subtract(num1, num2);
