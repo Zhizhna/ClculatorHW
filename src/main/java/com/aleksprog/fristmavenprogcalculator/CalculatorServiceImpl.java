@@ -1,7 +1,10 @@
-package com.aleksprog.fristmavenprogcalculator;
+package com.aleksprog.fristmavenprogcalculator.service.impl;
+import org.springframework.stereotype.Service;
 
-public class CalculatorMain {
-    public int add(int num1, int num2) {
+@Service
+public class CalculatorServiceImpl implements CalculatorService {
+
+    public int add(Integer num1, int num2) {
         return num1 + num2;
     }
 
@@ -19,5 +22,4 @@ public class CalculatorMain {
         }
         return (double) num1 / num2;
     }
-}
-//
+    }
